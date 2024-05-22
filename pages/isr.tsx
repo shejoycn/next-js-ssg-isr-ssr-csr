@@ -22,7 +22,7 @@ const isr = ({ name }: isrProps) => {
 
 export async function getStaticProps() {
   const data = await fetch(
-    "https://raw.githubusercontent.com/rahmatagungj/next-js-ssg-isr-ssr-csr/master/fake-api/name.json"
+    "https://raw.githubusercontent.com/shejoycn/next-js-ssg-isr-ssr-csr/master/fake-api/name.json"
   );
   const json = await data.json();
 
