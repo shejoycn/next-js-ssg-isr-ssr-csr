@@ -11,6 +11,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     await res.revalidate('/ssg');
+    await res.revalidate('/isr');
     return res.json({ revalidated: true });
   } catch (err) {
     const errorMessage = err instanceof Error ? err.message : 'Unknown error';

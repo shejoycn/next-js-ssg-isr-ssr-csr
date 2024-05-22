@@ -30,7 +30,7 @@ export async function getStaticProps() {
     props: {
       name: json.name,
     },
-    revalidate: 60,
+    revalidate: 120,
   };
 }
 
