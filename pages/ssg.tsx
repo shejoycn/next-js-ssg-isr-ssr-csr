@@ -20,7 +20,7 @@ const ssg = ({ name }: ssgProps) => {
 
 export async function getStaticProps() {
   const data = await fetch(
-    "https://raw.githubusercontent.com/rahmatagungj/next-js-ssg-isr-ssr-csr/master/fake-api/name.json"
+    "https://dev-rig-mvp-fe.azurewebsites.net/users.txt"
   );
   const json = await data.json();
 
